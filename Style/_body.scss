@@ -1,0 +1,105 @@
+// Body Style
+.main-section {
+    width: 20%;
+    border-radius: 2rem;
+    padding: 2rem;
+    background-color: hsl(216, 50%, 16%);
+    margin-top: 8%;
+
+    .product-view {
+        width: 100%;
+        .product-img {
+            width: 100%;
+            border-radius: 2rem;
+            cursor: pointer;
+        }
+    
+        .product-img:hover {
+            filter: contrast(50%);
+        }
+
+        .product-img:hover + .view-img {
+            display: inline;
+        }
+
+        .view-img{
+            position: absolute;
+            display: none;
+        }
+    
+    }
+    
+    .product-details {
+        
+        a {
+            margin: 2rem 1rem;
+            h2 {
+                font-size: 1.8rem;
+            }
+        }
+        
+
+        .product-description {
+            font-size: 1.3rem;
+            width: 95%;
+            margin: auto;
+        }
+
+        .price-time {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 2rem;
+            width: 100%;
+            padding: 0rem 1rem 2rem 1rem;
+            border-bottom: 0.2px solid rgba($color: #cecece, $alpha: 1.0);
+            .price {
+                font-size: 1.4rem;
+                color: hsl(178, 100%, 50%);
+                
+                img {
+                    margin: 0rem 0.5rem 0rem 0rem;
+                }
+            }
+
+            .time {
+                font-size: 1.4rem;
+                img {
+                    margin: 0rem 0.5rem 0rem 0rem;
+                }
+            }
+        }
+
+    }
+
+    .creator-details {
+        margin-top: 1.5rem;
+        width: 95%;
+        justify-content: flex-start !important;
+        .creator-img {
+            width: 4rem;
+            margin-right: 1rem;
+            border: 1px solid white;
+            border-radius: 50%;
+        }
+
+        p {
+
+            .creator-name {
+                font-weight: 500;
+                margin-left: 0.5rem !important;
+            }
+        }
+    }
+
+
+}
+
+// Mobile Design
+
+@media screen and (max-width:376px) {
+    .main-section {
+        width: 80%;
+        margin-top: 20%;
+    }
+}
